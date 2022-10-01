@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Player List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- first banner sections -->
+<main class="first-main">
+    <section class="first-section mx-auto">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="images/bannr.jpg" class="d-block w-100 img-fluid image-opacity" alt="...">
+                    <div class="carousel-caption d-md-block banner-text ">
+                        <h5 class="banner-header">There Have to do Football </h5>
+                        <p class="banner-paragraph">Chose you select Best Five and top players who you can be equib and there some prosper as you luckey and how much there is pay this</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+</main>
+<!-- first sections done -->
+
+<!-- playeres item sections start -->
+<section class="players-sections mx-auto mt-5">
+    <div class="row row-cols-1 row-cols-md-4 g-5 ">
+        <div class="col">
+            <div class="card h-100">
+                <img src="images/jadon.jpg" class="card-img-top img-fluid" alt="...">
+                <div class="card-body">
+                    <h2 id="player-jodan" class="card-title">Jodan</h2>
+                    <p class="card-text">36 Goals  .   120 Assest</p>
+                </div>
+                <button class="button">Select</button>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="images/naimar.jpg" class="card-img-top img-fluid" alt="...">
+                <div class="card-body">
+                    <h2 class="card-title">Naimar.Jr</h2>
+                    <p class="card-text">36 Goals . 120 Assest</p>
+                </div>
+                <button class="button">Select</button>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="images/pogba.jpg" class="card-img-top img-fluid" alt="...">
+                <div class="card-body">
+                    <h2 class="card-title">Pogba</h2>
+                    <p class="card-text">36 Goals . 120 Assest</p>
+                </div>
+                <button class="button">Select</button>
+            </div>
+        </div>
+
+
+        <div  class="col budget-sections ">
+            <div class="card h-100 player-card">
+                <h1 class="text-center mt-5">Select V</h1>
+                <ol id="setPlayers"></ol>
+            </div>
+        </div>
+
+
+        <div class="col">
+            <div class="card h-100">
+                <img src="images/silva.jpg" class="card-img-top img-fluid" alt="...">
+                <div class="card-body">
+                    <h2 class="card-title">Silva</h2>
+                    <p class="card-text">36 Goals . 120 Assest</p>
+                </div>
+                <button class="button">Select</button>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 tonis">
+                <img src="images/toni.jpg" class="card-img-top img-fluid " alt="...">
+                <div class="card-body">
+                    <h2 class="card-title">Toni</h2>
+                    <p class="card-text">36 Goals . 120 Assest</p>
+                </div>
+                <button class="button">Select</button>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="images/robert.jpg" class="card-img-top img-fluid" alt="...">
+                <div class="card-body">
+                    <h2 class="card-title">Robert</h2>
+                    <p class="card-text">36 Goals . 120 Assest</p>
+                </div>
+                <button class="button">Select</button>
+            </div>
+        </div>
+
+        <!-- budget Card -->
+        <!-- per player -->
+        <div class="col budget-sections">
+            <div class="card h-100 last-card">
+                <h2 class="budget">Budget</h2>
+                <div class="flex-input p-2 d-flex justify-content-between">
+                    <div>
+                        <h4>Per player</h4>
+                    </div>
+                    <div>
+                        <input id="per-palyer" class="input-player" type="text" name="" id="">
+                    </div>
+                </div>
+                <button id="calculate-btn" class="calculate-btn fw-semibold">Calculate</button>
+
+                    <!-- player Expenses -->
+                <div class="flex-input p-2 d-flex justify-content-between mt-2">
+                    <div>
+                        <h4>Player Expenses</h4>
+                    </div>
+                    <div>
+                        <h4>$ <span id="player-expense">00</span></h4>
+                    </div>
+                </div>
+                        <!-- manager -->
+                <div class="flex-input p-2 d-flex justify-content-between mt-3">
+                    <div>
+                        <h4>Manager</h4>
+                    </div>
+                    <div>
+                        <input id="manager-input" class="input-player" type="text" name="" id="">
+                    </div>
+                </div>
+
+                    <!-- Coach -->
+                <div class="flex-input p-2 d-flex justify-content-between">
+                    <div>
+                        <h4>Coach</h4>
+                    </div>
+                    <div>
+                        <input id="coach-input" class="input-player" type="text" name="" id="">
+                    </div>
+                </div>
+                <button id="calculate-btn-total" class="calculate-btn fw-semibold">Calculate Total</button>
+
+                    <!-- Total -->
+                <div class="flex-input p-2 d-flex justify-content-between mt-3 fw-semibold">
+                    <div>
+                        <h4>Total</h4>
+                    </div>
+                    <div class="dollar">
+                        <h4>$ <span id="total-amount">00</span></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="mt-5">
+    <p class="pt-5 footer">Copyright @ 2022 All Rights Reserved. <span class="footer-that">Muhammad Mustafijur Rahman</span> </p>
+</footer>
+
+
+
+<!-- add the file html to javascript -->
+    <!-- <script src="utilities.js"></script> -->
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+/* fonst */
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Teko:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+body{
+    background-color: rgb(100, 96, 96);
+}
+
+.first-section{
+    width: 90%;
+}
+.banner-text{
+    margin-bottom:30% ;
+}
+.banner-header{
+    /* padding-bottom:50%; */
+    color:white;
+    font-size: 4rem;
+    font-family: 'Alkalami', serif;
+    font-weight: 700;
+}
+.banner-paragraph{
+    color: white;
+    font-size: 1.5rem;
+    /* margin-bottom:50% ; */
+}
+.image-opacity{
+    opacity: 4.4;
+}
+
+/* second sections */
+.players-sections{
+    width: 80%;
+}
+.card img{
+    padding: 20px;
+}
+.player-card{
+    background-color: black;
+    color: white;
+}
+.card{
+    box-shadow: 10px 10px 10px;
+    border-radius: 10px;
+}
+ol li{
+    font-size: 1.5rem;
+    margin-left: 20%;
+    font-weight: 700;
+    margin-top: 5%;
+    font-family: 'Raleway', sans-serif;
+}
+.input-player{
+    width: 130px;
+    padding: 8px 0px;
+    border-radius: 10px;
+    box-shadow: 5px 4px 10px rgb(55, 55, 67);
+    border: none;
+    font-weight: 800;
+    text-align: center;
+    font-size: 1.3rem;
+}
+.input-player-expenses{
+    width: 140px;
+    padding: 8px 0px;
+}
+.calculate-btn{
+    background-color: rgb(7, 98, 255);
+    border-radius: 5px;
+    width: 200px;
+    border: none;
+    margin-left: 20%;
+    margin-top: 5%;
+    color: white;
+    padding: 10px 0px;
+}
+.button{
+    padding: 2.8% 20%;
+    border: none;
+    font-weight: 700;
+    background-color: crimson;
+    color: white;
+    border-radius:5px ;
+}
+.button:hover{
+    background-color: black;
+}
+.card-body{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.selectd-five{
+    text-align: center;
+    margin-top: 10%;
+}
+.budget{
+    text-align: center;
+    margin-top: 10%;
+}
+.tonis img{
+    height: 330px;
+}
+/* footer */
+footer{
+    background-color: black;
+    color: white;
+    height: 100px;
+    text-align: center;
+}
+.footer{
+    font-size: 1.5rem;
+}
+
+/* last card */
+.last-card{
+    padding: 15px;
+    background-color: black;
+    color: white;
+}
+.budget-sections{
+    font-family: 'Cairo', sans-serif;
+}
+.dollar{
+    color: orangered;
+}
+.footer-that{
+    color: crimson;
+    font-family: 'Dancing Script', cursive;
+}
+
+@media screen and(max-width:376px) {
+    .first-section {
+        width: 100%;
+    }
+        .players-sections {
+            width: 100%;
+        }
+    .col{
+        width: 100%;
+    }
+}
